@@ -1,0 +1,10 @@
+
+replicas: 3
+hostname: rancher.tater.local
+
+ingress:
+  tls:
+    source: rancher
+  extraAnnotations:
+    external-dns.alpha.kubernetes.io/hostname: rancher.tater.local
+
